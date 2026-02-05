@@ -23,7 +23,7 @@ public:
 
     // TODO: print
     void print() const {
-        cout << "Box contains: " << value << endl;
+        cout << value << endl;
     }
 };
 

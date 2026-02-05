@@ -18,11 +18,11 @@ T arraySum(T arr[], int size) {
 }
 
 int main() {
-    int arr1[] = {7, 14, 21, 28,35, 42, 49};
-    double arr2[] = {1 ,2, 3,4,5,6,7};
+    int arr1[] = {1,2,3,4};
+    double arr2[] = {1.1, 2.2, 3.3};
 
-    cout << "Sum of int array: " << arraySum(arr1, 7) << endl;
-    cout << "Sum of double array: " << arraySum(arr2, 7) << endl;
+    cout << "Sum of int array: " << arraySum(arr1, 4) << endl;
+    cout << "Sum of double array: " << arraySum(arr2, 3) << endl;
 
     return 0;
 }

@@ -29,8 +29,8 @@ public:
 
 int main()
 {
-  Box<int> intBox(0);
-  Box<double> doubleBox(100);
+  Box<int> intBox(10);
+  Box<double> doubleBox(3.14);
   Box<string> stringBox("CS20");
 
   intBox.print();

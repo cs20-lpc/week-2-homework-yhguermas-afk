@@ -1,28 +1,28 @@
 #include <iostream>
 using namespace std;
 
-// TODO: Write a function template named arraySum
-// Parameters:
-//   - an array of type T
-//   - an integer size
-// Return:
-//   - the sum of the elements
-
+// Function template named arraySum
 template <typename T>
 T arraySum(T arr[], int size) {
-    // TODO: Initialize a variable to store the sum
+    // Initialize a variable to store the sum
+    // Starting with arr[0] or T() is standard
+    T sum = T(); 
 
-    // TODO: Use a loop to add all elements
+    // Use a loop to add all elements
+    for (int i = 0; i < size; i++) {
+        sum += arr[i];
+    }
 
-    // TODO: Return the sum
+    // Return the sum
+    return sum;
 }
 
 int main() {
-    int arr1[] = {1, 2, 3, 4};
-    double arr2[] = {1.1, 2.2, 3.3};
+    int arr1[] = {7, 14, 21, 28,35, 42, 49};
+    double arr2[] = {1 ,2, 3,4,5,6,7};
 
-    cout << "Sum of int array: " << arraySum(arr1, 4) << endl;
-    cout << "Sum of double array: " << arraySum(arr2, 3) << endl;
+    cout << "Sum of int array: " << arraySum(arr1, 7) << endl;
+    cout << "Sum of double array: " << arraySum(arr2, 7) << endl;
 
     return 0;
 }
